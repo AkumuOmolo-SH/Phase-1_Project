@@ -4,7 +4,10 @@
       "id": 1,
       "name": "Ibuprofen",
       "purpose": "Pain relief",
-      "sideEffects": ["nausea", "dizziness"],
+      "sideEffects": [
+        "nausea",
+        "dizziness"
+      ],
       "image": "https://www.drugs.com/images/pills/fio/ibuprofen-200-mg-fio.jpg"
     },
     {
@@ -18,7 +21,10 @@
       "id": 3,
       "name": "Aspirin",
       "purpose": "Pain relief",
-      "sideEffects": ["stomach upset", "bleeding"],
+      "sideEffects": [
+        "stomach upset",
+        "bleeding"
+      ],
       "image": "https://www.drugs.com/images/pills/bayer/bayer-aspirin-81-mg.jpg"
     },
     {
@@ -32,7 +38,9 @@
       "id": 5,
       "name": "Cetirizine",
       "purpose": "Allergy",
-      "sideEffects": ["drowsiness"],
+      "sideEffects": [
+        "drowsiness"
+      ],
       "image": "https://www.drugs.com/images/pills/usc/cetirizine-10-mg.jpg"
     },
     {
@@ -46,7 +54,10 @@
       "id": 7,
       "name": "Amoxicillin",
       "purpose": "Infection",
-      "sideEffects": ["rash", "nausea"],
+      "sideEffects": [
+        "rash",
+        "nausea"
+      ],
       "image": "https://www.drugs.com/images/pills/teva/amoxicillin-500-mg.jpg"
     },
     {
@@ -60,7 +71,9 @@
       "id": 9,
       "name": "Dextromethorphan",
       "purpose": "Cough",
-      "sideEffects": ["dizziness"],
+      "sideEffects": [
+        "dizziness"
+      ],
       "image": "https://www.drugs.com/images/pills/btl/robitussin-dm.jpg"
     },
     {
@@ -74,7 +87,10 @@
       "id": 11,
       "name": "Diphenhydramine",
       "purpose": "Sleep aid",
-      "sideEffects": ["drowsiness", "dry mouth"],
+      "sideEffects": [
+        "drowsiness",
+        "dry mouth"
+      ],
       "image": "https://www.drugs.com/images/pills/btl/benadryl.jpg"
     },
     {
@@ -88,7 +104,10 @@
       "id": 13,
       "name": "Omeprazole",
       "purpose": "Acid reflux",
-      "sideEffects": ["headache", "stomach pain"],
+      "sideEffects": [
+        "headache",
+        "stomach pain"
+      ],
       "image": "https://www.drugs.com/images/pills/btl/prilosec-otc.jpg"
     },
     {
@@ -102,7 +121,10 @@
       "id": 15,
       "name": "Metformin",
       "purpose": "Diabetes",
-      "sideEffects": ["diarrhea", "nausea"],
+      "sideEffects": [
+        "diarrhea",
+        "nausea"
+      ],
       "image": "https://images.ctfassets.net/4w8qvp17lo47/36aCkc13mwOuumQ2seygc4/e2e002b451a77e75e6fd98857df4b9eb/pregnancy-metformin-is-it-safe_thumb.jpg"
     },
     {
@@ -116,14 +138,20 @@
       "id": 17,
       "name": "Pseudoephedrine",
       "purpose": "Common cold",
-      "sideEffects": ["insomnia", "nervousness"],
+      "sideEffects": [
+        "insomnia",
+        "nervousness"
+      ],
       "image": "https://www.drugs.com/images/pills/btl/sudafed.jpg"
     },
     {
       "id": 18,
       "name": "Phenylephrine",
       "purpose": "Common cold",
-      "sideEffects": ["headache", "dizziness"],
+      "sideEffects": [
+        "headache",
+        "dizziness"
+      ],
       "image": "https://www.drugs.com/images/pills/btl/phenylephrine-hci.jpg"
     },
     {
@@ -139,9 +167,99 @@
       "purpose": "Common cold",
       "sideEffects": [],
       "image": "https://www.drugs.com/images/pills/btl/robitussin-honey-lemon.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Honey & Lemon Syrup",
+      "purpose": "Common cold",
+      "sideEffects": [],
+      "image": "https://www.drugs.com/images/pills/btl/robitussin-honey-lemon.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Pseudoephedrine",
+      "purpose": "Common cold",
+      "sideEffects": [
+        "insomnia",
+        "nervousness"
+      ],
+      "image": "https://www.drugs.com/images/pills/btl/sudafed.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Metformin",
+      "purpose": "Diabetes",
+      "sideEffects": [
+        "diarrhea",
+        "nausea"
+      ],
+      "image": "https://images.ctfassets.net/4w8qvp17lo47/36aCkc13mwOuumQ2seygc4/e2e002b451a77e75e6fd98857df4b9eb/pregnancy-metformin-is-it-safe_thumb.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Pseudoephedrine",
+      "purpose": "Common cold",
+      "sideEffects": [
+        "insomnia",
+        "nervousness"
+      ],
+      "image": "https://www.drugs.com/images/pills/btl/sudafed.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Phenylephrine",
+      "purpose": "Common cold",
+      "sideEffects": [
+        "headache",
+        "dizziness"
+      ],
+      "image": "https://www.drugs.com/images/pills/btl/phenylephrine-hci.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Metformin",
+      "purpose": "Diabetes",
+      "sideEffects": [
+        "diarrhea",
+        "nausea"
+      ],
+      "image": "https://images.ctfassets.net/4w8qvp17lo47/36aCkc13mwOuumQ2seygc4/e2e002b451a77e75e6fd98857df4b9eb/pregnancy-metformin-is-it-safe_thumb.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Honey & Lemon Syrup",
+      "purpose": "Common cold",
+      "sideEffects": [],
+      "image": "https://www.drugs.com/images/pills/btl/robitussin-honey-lemon.jpg"
     }
   ],
-  "savedDrugs": []
+  "savedDrugs": [
+    {
+      "id": 15,
+      "name": "Metformin",
+      "purpose": "Diabetes",
+      "sideEffects": [
+        "diarrhea",
+        "nausea"
+      ],
+      "image": "https://images.ctfassets.net/4w8qvp17lo47/36aCkc13mwOuumQ2seygc4/e2e002b451a77e75e6fd98857df4b9eb/pregnancy-metformin-is-it-safe_thumb.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Acetaminophen",
+      "purpose": "Pain relief",
+      "sideEffects": [],
+      "image": "https://www.drugs.com/images/pills/apl/apap-325-mg.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Ibuprofen",
+      "purpose": "Pain relief",
+      "sideEffects": [
+        "nausea",
+        "dizziness"
+      ],
+      "image": "https://www.drugs.com/images/pills/fio/ibuprofen-200-mg-fio.jpg"
+    }
+  ]
 }
-
-
