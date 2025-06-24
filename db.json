@@ -171,18 +171,24 @@
   ],
   "savedDrugs": [
     {
-      "id": "16",
-      "name": "Glipizide",
-      "purpose": "Diabetes",
-      "sideEffects": [],
-      "image": "https://www.drugs.com/images/pills/apl/glipizide-10-mg.jpg"
+      "id": "18",
+      "name": "Phenylephrine",
+      "purpose": "Common cold",
+      "sideEffects": [
+        "headache",
+        "dizziness"
+      ],
+      "image": "https://www.drugs.com/images/pills/btl/phenylephrine-hci.jpg"
     },
     {
-      "id": "12",
-      "name": "Melatonin",
-      "purpose": "Sleep aid",
-      "sideEffects": [],
-      "image": "https://www.drugs.com/images/pills/btl/natrol-melatonin.jpg"
+      "id": "1",
+      "name": "Ibuprofen",
+      "purpose": "Pain relief",
+      "sideEffects": [
+        "nausea",
+        "dizziness"
+      ],
+      "image": "https://www.drugs.com/images/pills/fio/ibuprofen-200-mg-fio.jpg"
     }
   ]
 }
