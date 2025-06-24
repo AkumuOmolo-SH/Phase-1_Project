@@ -1,7 +1,7 @@
 {
   "drugs": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Ibuprofen",
       "purpose": "Pain relief",
       "sideEffects": [
@@ -11,14 +11,14 @@
       "image": "https://www.drugs.com/images/pills/fio/ibuprofen-200-mg-fio.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Acetaminophen",
       "purpose": "Pain relief",
       "sideEffects": [],
       "image": "https://www.drugs.com/images/pills/apl/apap-325-mg.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Aspirin",
       "purpose": "Pain relief",
       "sideEffects": [
@@ -28,14 +28,14 @@
       "image": "https://www.drugs.com/images/pills/bayer/bayer-aspirin-81-mg.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Naproxen",
       "purpose": "Pain relief",
       "sideEffects": [],
       "image": "https://www.drugs.com/images/pills/mkt/naproxen-220-mg.jpg"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Cetirizine",
       "purpose": "Allergy",
       "sideEffects": [
@@ -44,14 +44,14 @@
       "image": "https://www.drugs.com/images/pills/usc/cetirizine-10-mg.jpg"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Loratadine",
       "purpose": "Allergy",
       "sideEffects": [],
       "image": "https://www.drugs.com/images/pills/usc/loratadine-10-mg.jpg"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Amoxicillin",
       "purpose": "Infection",
       "sideEffects": [
@@ -61,14 +61,14 @@
       "image": "https://www.drugs.com/images/pills/teva/amoxicillin-500-mg.jpg"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Cefalexin",
       "purpose": "Infection",
       "sideEffects": [],
       "image": "https://www.drugs.com/images/pills/teva/cephalexin-500-mg.jpg"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Dextromethorphan",
       "purpose": "Cough",
       "sideEffects": [
@@ -77,14 +77,14 @@
       "image": "https://www.drugs.com/images/pills/btl/robitussin-dm.jpg"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Guaifenesin",
       "purpose": "Cough",
       "sideEffects": [],
       "image": "https://www.drugs.com/images/pills/btl/mucinex.jpg"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Diphenhydramine",
       "purpose": "Sleep aid",
       "sideEffects": [
@@ -94,14 +94,14 @@
       "image": "https://www.drugs.com/images/pills/btl/benadryl.jpg"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Melatonin",
       "purpose": "Sleep aid",
       "sideEffects": [],
       "image": "https://www.drugs.com/images/pills/btl/natrol-melatonin.jpg"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Omeprazole",
       "purpose": "Acid reflux",
       "sideEffects": [
@@ -111,14 +111,14 @@
       "image": "https://www.drugs.com/images/pills/btl/prilosec-otc.jpg"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Famotidine",
       "purpose": "Acid reflux",
       "sideEffects": [],
       "image": "https://www.drugs.com/images/pills/btl/pepcid-ac.jpg"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Metformin",
       "purpose": "Diabetes",
       "sideEffects": [
@@ -128,14 +128,14 @@
       "image": "https://images.ctfassets.net/4w8qvp17lo47/36aCkc13mwOuumQ2seygc4/e2e002b451a77e75e6fd98857df4b9eb/pregnancy-metformin-is-it-safe_thumb.jpg"
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Glipizide",
       "purpose": "Diabetes",
       "sideEffects": [],
       "image": "https://www.drugs.com/images/pills/apl/glipizide-10-mg.jpg"
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Pseudoephedrine",
       "purpose": "Common cold",
       "sideEffects": [
@@ -145,7 +145,7 @@
       "image": "https://www.drugs.com/images/pills/btl/sudafed.jpg"
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "Phenylephrine",
       "purpose": "Common cold",
       "sideEffects": [
@@ -155,78 +155,14 @@
       "image": "https://www.drugs.com/images/pills/btl/phenylephrine-hci.jpg"
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "Saline Nasal Spray",
       "purpose": "Common cold",
       "sideEffects": [],
       "image": "https://www.drugs.com/images/pills/btl/arm-hammer-simply-saline.jpg"
     },
     {
-      "id": 20,
-      "name": "Honey & Lemon Syrup",
-      "purpose": "Common cold",
-      "sideEffects": [],
-      "image": "https://www.drugs.com/images/pills/btl/robitussin-honey-lemon.jpg"
-    },
-    {
-      "id": 20,
-      "name": "Honey & Lemon Syrup",
-      "purpose": "Common cold",
-      "sideEffects": [],
-      "image": "https://www.drugs.com/images/pills/btl/robitussin-honey-lemon.jpg"
-    },
-    {
-      "id": 17,
-      "name": "Pseudoephedrine",
-      "purpose": "Common cold",
-      "sideEffects": [
-        "insomnia",
-        "nervousness"
-      ],
-      "image": "https://www.drugs.com/images/pills/btl/sudafed.jpg"
-    },
-    {
-      "id": 15,
-      "name": "Metformin",
-      "purpose": "Diabetes",
-      "sideEffects": [
-        "diarrhea",
-        "nausea"
-      ],
-      "image": "https://images.ctfassets.net/4w8qvp17lo47/36aCkc13mwOuumQ2seygc4/e2e002b451a77e75e6fd98857df4b9eb/pregnancy-metformin-is-it-safe_thumb.jpg"
-    },
-    {
-      "id": 17,
-      "name": "Pseudoephedrine",
-      "purpose": "Common cold",
-      "sideEffects": [
-        "insomnia",
-        "nervousness"
-      ],
-      "image": "https://www.drugs.com/images/pills/btl/sudafed.jpg"
-    },
-    {
-      "id": 18,
-      "name": "Phenylephrine",
-      "purpose": "Common cold",
-      "sideEffects": [
-        "headache",
-        "dizziness"
-      ],
-      "image": "https://www.drugs.com/images/pills/btl/phenylephrine-hci.jpg"
-    },
-    {
-      "id": 15,
-      "name": "Metformin",
-      "purpose": "Diabetes",
-      "sideEffects": [
-        "diarrhea",
-        "nausea"
-      ],
-      "image": "https://images.ctfassets.net/4w8qvp17lo47/36aCkc13mwOuumQ2seygc4/e2e002b451a77e75e6fd98857df4b9eb/pregnancy-metformin-is-it-safe_thumb.jpg"
-    },
-    {
-      "id": 20,
+      "id": "20",
       "name": "Honey & Lemon Syrup",
       "purpose": "Common cold",
       "sideEffects": [],
@@ -235,31 +171,18 @@
   ],
   "savedDrugs": [
     {
-      "id": 15,
-      "name": "Metformin",
+      "id": "16",
+      "name": "Glipizide",
       "purpose": "Diabetes",
-      "sideEffects": [
-        "diarrhea",
-        "nausea"
-      ],
-      "image": "https://images.ctfassets.net/4w8qvp17lo47/36aCkc13mwOuumQ2seygc4/e2e002b451a77e75e6fd98857df4b9eb/pregnancy-metformin-is-it-safe_thumb.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Acetaminophen",
-      "purpose": "Pain relief",
       "sideEffects": [],
-      "image": "https://www.drugs.com/images/pills/apl/apap-325-mg.jpg"
+      "image": "https://www.drugs.com/images/pills/apl/glipizide-10-mg.jpg"
     },
     {
-      "id": 1,
-      "name": "Ibuprofen",
-      "purpose": "Pain relief",
-      "sideEffects": [
-        "nausea",
-        "dizziness"
-      ],
-      "image": "https://www.drugs.com/images/pills/fio/ibuprofen-200-mg-fio.jpg"
+      "id": "12",
+      "name": "Melatonin",
+      "purpose": "Sleep aid",
+      "sideEffects": [],
+      "image": "https://www.drugs.com/images/pills/btl/natrol-melatonin.jpg"
     }
   ]
 }
