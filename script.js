@@ -148,6 +148,10 @@ const drugListContainer = document.getElementById("drug-list");
 const savedList = document.getElementById("saved-drug-list");
 const searchInput = document.getElementById("search-input");
 const clearButton = document.getElementById("clear-search");
+const noteForm = document.getElementById("note-form");
+const noteContent = document.getElementById("note-content");
+const notesList = document.getElementById("notes-list");
+
 
 // Fetch savedDrugs first, then allDrugs
 fetch("http://localhost:3000/savedDrugs")
@@ -283,3 +287,23 @@ savedList.addEventListener("click", function (event) {
   }
 });
 
+function wordCount(str) {
+  return str.trim().split(/\s+/).length;
+}
+function loadNotes() {
+  fetch("http://localhost:3000/notes")
+    .then(res => res.json())
+    .then(notes => renderNotes(notes));
+}
+
+function renderNotes(notes) {
+  notesList.innerHTML = "";
+  notes.forEach(note => {
+    const li = document.createElement("li");
+    li.innerHTML = `
+      <p contenteditable="true" data-id="${note.id}">${note.content}</p>
+      <button class="delete-note" data-id="${note.id}">Delete</button>
+    `;
+    notesList.appendChild(li);
+  });
+}
