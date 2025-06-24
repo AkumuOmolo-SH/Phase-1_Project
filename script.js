@@ -307,3 +307,33 @@ function renderNotes(notes) {
     notesList.appendChild(li);
   });
 }
+noteForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const content = noteContent.value.trim();
+
+  if (wordCount(content) > 100) {
+    alert("Note cannot exceed 100 words.");
+    return;
+  }
+
+  fetch("http://localhost:3000/notes")
+    .then(res => res.json())
+    .then(notes => {
+      if (notes.length >= 4) {
+        alert("Maximum of 4 notes allowed.");
+        return;
+      }
+
+      const newNote = { content };
+
+      fetch("http://localhost:3000/notes", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(newNote),
+      })
+        .then(() => {
+          noteForm.reset();
+          loadNotes();
+        });
+    });
+});
