@@ -179,7 +179,38 @@ function renderNotes(notes) {
   });
 }
 
+notesList.addEventListener("click", function (e) {
+  const id = e.target.dataset.id;
 
+  if (e.target.classList.contains("delete-note")) {
+    fetch(`http://localhost:3000/notes/${id}`, {
+      method: "DELETE"
+    }).then(() => loadNotes());
+  }
+
+  if (e.target.classList.contains("edit-note")) {
+    const textarea = e.target.parentElement.querySelector("textarea");
+
+    if (e.target.textContent === "Edit") {
+      textarea.disabled = false;
+      textarea.focus();
+      e.target.textContent = "Save";
+    } else {
+      const newContent = textarea.value.trim();
+
+      if (wordCount(newContent) > 100) {
+        alert("Note cannot exceed 100 words.");
+        return;
+      }
+
+      fetch(`http://localhost:3000/notes/${id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ content: newContent })
+      }).then(() => loadNotes());
+    }
+  }
+});
 
 noteForm.addEventListener("submit", function (e) {
   e.preventDefault();
