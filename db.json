@@ -171,32 +171,17 @@
   ],
   "savedDrugs": [
     {
-      "id": "8",
-      "name": "Cefalexin",
-      "purpose": "Infection",
-      "sideEffects": [],
-      "image": "https://www.drugs.com/images/pills/teva/cephalexin-500-mg.jpg"
-    },
-    {
-      "id": "17",
-      "name": "Pseudoephedrine",
-      "purpose": "Common cold",
+      "id": "1",
+      "name": "Ibuprofen",
+      "purpose": "Pain relief",
       "sideEffects": [
-        "insomnia",
-        "nervousness"
+        "nausea",
+        "dizziness"
       ],
-      "image": "https://www.drugs.com/images/pills/btl/sudafed.jpg"
+      "image": "https://i5.walmartimages.com/seo/Equate-Ibuprofen-Mini-Softgel-Capsules-200-mg-160-Count_d2498da5-b4b9-4363-b143-0c6d24ff1286.9e764a0673ce90582406c072c0a0861b.jpeg"
     }
   ],
   "notes": [
-    {
-      "id": "e10d",
-      "content": "Avoid Aspirin!!!"
-    },
-    {
-      "id": "7df5",
-      "content": "Avoid allergy"
-    },
     {
       "id": "1122",
       "content": "No Ibuprofen for 1 month"
