@@ -14,6 +14,13 @@ body {
 }
 
 /* Section Headers */
+h1 {
+  font-size: 40px;
+  color: #555;
+  margin-bottom: 20px;
+  
+}
+
 h2 {
   margin-top: 40px;
   margin-bottom: 20px;
@@ -74,6 +81,7 @@ button:hover {
 button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+ 
 }
 
 .filter-tag {
@@ -84,6 +92,28 @@ button:disabled {
   border-radius: 16px;
   border: 1px solid #ccc;
   cursor: pointer;
+}
+
+
+.filter-tag {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    color: #acacac;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+.filter-tag:hover {
+  background-color: #ddd;
+}
+
+.filter-tag.active {
+  background-color: #f78e74;
+   color: white;
+  border-color: #f78e74;
 }
 
 

@@ -65,17 +65,15 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function applyTagFilter(tagText) {
-    const tagElement = [...document.querySelectorAll(".filter-tag")].find(tag => tag.textContent === tagText);
-    if (!tagElement) return;
+  document.querySelectorAll(".filter-tag").forEach(tag => tag.classList.remove("active"));
 
-    if (tagElement.classList.contains("active")) {
-      tagElement.classList.remove("active");
-    } else {
-      tagElement.classList.add("active");
-    }
-
-    applyFilters();
+  const tagElement = [...document.querySelectorAll(".filter-tag")].find(tag => tag.textContent === tagText);
+  if (tagElement) {
+    tagElement.classList.add("active");
   }
+
+  applyFilters();
+}
 
   function renderFilterTags() {
     purposeTagContainer.innerHTML = "";
