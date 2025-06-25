@@ -171,21 +171,21 @@
   ],
   "savedDrugs": [
     {
-      "id": "1",
-      "name": "Ibuprofen",
-      "purpose": "Pain relief",
-      "sideEffects": [
-        "nausea",
-        "dizziness"
-      ],
-      "image": "https://www.drugs.com/images/pills/fio/ibuprofen-200-mg-fio.jpg"
+      "id": "8",
+      "name": "Cefalexin",
+      "purpose": "Infection",
+      "sideEffects": [],
+      "image": "https://www.drugs.com/images/pills/teva/cephalexin-500-mg.jpg"
     },
     {
-      "id": "16",
-      "name": "Glipizide",
-      "purpose": "Diabetes",
-      "sideEffects": [],
-      "image": "https://www.drugs.com/images/pills/apl/glipizide-10-mg.jpg"
+      "id": "17",
+      "name": "Pseudoephedrine",
+      "purpose": "Common cold",
+      "sideEffects": [
+        "insomnia",
+        "nervousness"
+      ],
+      "image": "https://www.drugs.com/images/pills/btl/sudafed.jpg"
     }
   ],
   "notes": [

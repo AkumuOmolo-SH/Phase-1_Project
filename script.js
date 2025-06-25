@@ -11,7 +11,6 @@ const noteContent = document.getElementById("note-content");
 const notesList = document.getElementById("notes-list");
 
 
-// Fetch savedDrugs first, then allDrugs
 fetch("http://localhost:3000/savedDrugs")
   .then(response => response.json())
   .then(data => {
@@ -35,8 +34,7 @@ fetch("http://localhost:3000/savedDrugs")
     displayDrugs(allDrugs);
   });
 
-  loadNotes(); // <- important for showing notes after refresh
-
+  loadNotes(); 
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -120,7 +118,7 @@ drugListContainer.addEventListener("click", function (event) {
   }
 });
 
-// Remove from saved list
+
 savedList.addEventListener("click", function (event) {
   if (event.target.classList.contains("remove-btn")) {
     const drugId = event.target.dataset.id;
@@ -173,12 +171,16 @@ function renderNotes(notes) {
   notes.forEach(note => {
     const li = document.createElement("li");
     li.innerHTML = `
-      <p contenteditable="true" data-id="${note.id}">${note.content}</p>
+     <textarea data-id="${note.id}" disabled>${note.content}</textarea>
+      <button class="edit-note" data-id="${note.id}">Edit</button>
       <button class="delete-note" data-id="${note.id}">Delete</button>
     `;
     notesList.appendChild(li);
   });
 }
+
+
+
 noteForm.addEventListener("submit", function (e) {
   e.preventDefault();
   const content = noteContent.value.trim();
