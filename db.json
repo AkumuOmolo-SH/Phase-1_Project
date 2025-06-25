@@ -190,11 +190,15 @@
       ],
       "image": "https://www.drugs.com/images/pills/fio/ibuprofen-200-mg-fio.jpg"
     }
+  ],
+  "notes": [
+    {
+      "id": "1",
+      "content": "Ibuprofen not in stock until next month"
+    },
+    {
+      "id": "7219",
+      "content": "Best pain reliever is aspirin."
+    }
   ]
 }
-"notes": [
-  {
-    "id": 1,
-    "content": "Ibuprofen not in stock until next month"
-  }
-]
