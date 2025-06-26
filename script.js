@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   let allDrugs = [];
   let savedDrugs = [];
+  let currentUser = null;
 
   const drugListContainer = document.getElementById("drug-list");
   const savedList = document.getElementById("saved-drug-list");
@@ -12,6 +13,50 @@ document.addEventListener("DOMContentLoaded", () => {
   const resetButton = document.getElementById("reset-filters");
   const purposeTagContainer = document.getElementById("purpose-tags");
   const effectTagContainer = document.getElementById("effect-tags");
+  const userStatus = document.getElementById("user-status");
+  const loginInput = document.getElementById("auth-username");
+  const loginBtn = document.getElementById("login-btn");
+  const registerBtn = document.getElementById("register-btn");
+
+  loginBtn.addEventListener("click", () => {
+    const username = loginInput.value.trim();
+    if (!username) return alert("Enter a username.");
+
+    fetch(`http://localhost:3000/users?username=${username}`)
+      .then(res => res.json())
+      .then(users => {
+        if (users.length > 0) {
+          currentUser = users[0];
+          userStatus.textContent = `Logged in as ${currentUser.username}`;
+        } else {
+          alert("User not found.");
+        }
+      });
+  });
+
+  registerBtn.addEventListener("click", () => {
+    const username = loginInput.value.trim();
+    if (!username) return alert("Enter a username.");
+
+    fetch(`http://localhost:3000/users?username=${username}`)
+      .then(res => res.json())
+      .then(users => {
+        if (users.length === 0) {
+          fetch(`http://localhost:3000/users`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ username })
+          })
+            .then(res => res.json())
+            .then(user => {
+              currentUser = user;
+              userStatus.textContent = `Logged in as ${user.username}`;
+            });
+        } else {
+          alert("Username already exists.");
+        }
+      });
+  });
 
   fetch("http://localhost:3000/savedDrugs")
     .then(res => res.json())
@@ -254,6 +299,40 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   });
+
+  const authModal = document.getElementById("auth-modal");
+const openAuthBtn = document.getElementById("open-auth-modal");
+const closeModalBtn = document.getElementById("close-modal");
+
+const loginSection = document.getElementById("login-section");
+const registerSection = document.getElementById("register-section");
+const showLoginBtn = document.getElementById("show-login");
+const showRegisterBtn = document.getElementById("show-register");
+
+openAuthBtn.addEventListener("click", () => {
+  authModal.style.display = "flex";
+});
+
+closeModalBtn.addEventListener("click", () => {
+  authModal.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === authModal) {
+    authModal.style.display = "none";
+  }
+});
+
+showLoginBtn.addEventListener("click", () => {
+  loginSection.style.display = "block";
+  registerSection.style.display = "none";
+});
+
+showRegisterBtn.addEventListener("click", () => {
+  loginSection.style.display = "none";
+  registerSection.style.display = "block";
+});
+
 
   noteForm.addEventListener("submit", function (e) {
     e.preventDefault();

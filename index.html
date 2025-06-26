@@ -3,18 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MedSafe</title>
+  <title>MedSafe&reg;</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>MEDSafe</h1>
+  <h1>MEDSafe&reg;</h1>
   <nav>
     <ul class="nav-list">
       <li><a href="#saved-list" class="tab">Saved Drugs</a></li>
       <li><a href="#note-form" class="tab">Your Notes</a></li>
     </ul>
   </nav>
+
+<button id="open-auth-modal">Log In / Register</button>
+
+  <!-- Login Section -->
+
+<div id="auth-cpntainer">
+<div id="login-section">
+  <h2>Login</h2>
+  <input type="text" id="username-input" placeholder="Enter your username" />
+  <input type="password" id="password-input" placeholder="Password" />
+  <button id="login-btn">Login</button>
+</div>
+
+<!-- Registration Section -->
+<div id="register-section">
+  <h2>Register</h2>
+  <input type="text" id="register-username" placeholder="Choose a username" />
+  <input type="password" id="register-password" placeholder="Choose a password" />
+  <button id="register-btn">Register</button>
+</div>
+</div>
+
+<!-- Welcome/Logout -->
+<div id="user-section" style="display: none;">
+ <p id="welcome-msg">Welcome to MedSafe<span id="user-status"></span></p>
+  <button id="logout-btn">Logout</button>
+</div>
+
 
   <p id = "top-paragraph"> This app helps you explore medications based on purpose and side effects. Easily search, filter, and save drugs to your collection. With clear visuals and safety-focused tags, making informed medical choices is simple. Perfect for patients, caregivers, or anyone managing treatment with confidence and ease. </p>
 
@@ -46,6 +74,34 @@
     <button type="submit">Add Note</button>
   </form>
   <ul id="notes-list"></ul>
+
+  <!-- Auth Modal -->
+<div id="auth-modal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close-btn" id="close-modal">&times;</span>
+    
+    <div class="auth-tabs">
+      <button id="show-login">Login</button>
+      <button id="show-register">Register</button>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login-section">
+      <h3>Login</h3>
+      <input type="text" id="username-input" placeholder="Username" />
+      <input type="password" id="password-input" placeholder="Password" />
+      <button id="login-btn">Login</button>
+    </div>
+
+    <!-- Register Form -->
+    <div id="register-section" style="display: none;">
+      <h3>Register</h3>
+      <input type="text" id="register-username" placeholder="New Username" />
+      <input type="password" id="register-password" placeholder="New Password" />
+      <button id="register-btn">Register</button>
+    </div>
+  </div>
+</div>
 
   <script src="script.js" defer></script>
 </body>

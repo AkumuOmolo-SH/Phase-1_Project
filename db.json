@@ -1,4 +1,11 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "username": "Akumu",
+      "password": "1234"
+    }
+  ],
   "drugs": [
     {
       "id": "1",
@@ -171,16 +178,6 @@
   ],
   "savedDrugs": [
     {
-      "id": "1",
-      "name": "Ibuprofen",
-      "purpose": "Pain relief",
-      "sideEffects": [
-        "nausea",
-        "dizziness"
-      ],
-      "image": "https://i5.walmartimages.com/seo/Equate-Ibuprofen-Mini-Softgel-Capsules-200-mg-160-Count_d2498da5-b4b9-4363-b143-0c6d24ff1286.9e764a0673ce90582406c072c0a0861b.jpeg"
-    },
-    {
       "id": "11",
       "name": "Diphenhydramine",
       "purpose": "Sleep aid",
@@ -213,6 +210,33 @@
       "purpose": "Acid reflux",
       "sideEffects": [],
       "image": "https://www.camberpharma.com/wp-content/uploads/2022/06/Famotidine_bottle_40mg_1000.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Aspirin",
+      "purpose": "Pain relief",
+      "sideEffects": [
+        "stomach upset",
+        "bleeding"
+      ],
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71sFt1-svKL.jpg"
+    },
+    {
+      "id": "1",
+      "name": "Ibuprofen",
+      "purpose": "Pain relief",
+      "sideEffects": [
+        "nausea",
+        "dizziness"
+      ],
+      "image": "https://i5.walmartimages.com/seo/Equate-Ibuprofen-Mini-Softgel-Capsules-200-mg-160-Count_d2498da5-b4b9-4363-b143-0c6d24ff1286.9e764a0673ce90582406c072c0a0861b.jpeg"
+    },
+    {
+      "id": "4",
+      "name": "Naproxen",
+      "purpose": "Pain relief",
+      "sideEffects": [],
+      "image": "https://i5.walmartimages.com/seo/HealthA2Z-Naproxen-Sodium-220mg-NSAID-300-Caplets-Fast-Pain-Relief-Fever-Reducer_f813612d-4360-45c8-a6b3-281e3e3cdaa0.e0e6ae94263ee89286269bb8678d1ca8.jpeg"
     }
   ],
   "notes": [
