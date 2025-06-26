@@ -1,7 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // 🔄 Automatically switch between local and Render server
+  const baseURL = window.location.hostname.includes("localhost")
+    ? "http://localhost:3000"
+    : "https://medsafe-lifx.onrender.com";
+
   let allDrugs = [];
   let savedDrugs = [];
-  
 
   const drugListContainer = document.getElementById("drug-list");
   const savedList = document.getElementById("saved-drug-list");
@@ -13,13 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const resetButton = document.getElementById("reset-filters");
   const purposeTagContainer = document.getElementById("purpose-tags");
   const effectTagContainer = document.getElementById("effect-tags");
-  
-  fetch("http://localhost:3000/savedDrugs")
+
+  // ✅ Load saved drugs first, then all drugs
+  fetch(`${baseURL}/savedDrugs`)
     .then(res => res.json())
     .then(data => {
       savedDrugs = data;
       renderSavedDrugs();
-      return fetch("http://localhost:3000/drugs");
+      return fetch(`${baseURL}/drugs`);
     })
     .then(res => res.json())
     .then(data => {
@@ -66,15 +71,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function applyTagFilter(tagText) {
-  document.querySelectorAll(".filter-tag").forEach(tag => tag.classList.remove("active"));
-
-  const tagElement = [...document.querySelectorAll(".filter-tag")].find(tag => tag.textContent === tagText);
-  if (tagElement) {
-    tagElement.classList.add("active");
+    document.querySelectorAll(".filter-tag").forEach(tag => tag.classList.remove("active"));
+    const tagElement = [...document.querySelectorAll(".filter-tag")].find(tag => tag.textContent === tagText);
+    if (tagElement) tagElement.classList.add("active");
+    applyFilters();
   }
-
-  applyFilters();
-}
 
   function renderFilterTags() {
     purposeTagContainer.innerHTML = "";
@@ -114,7 +115,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function displayDrugs(drugs) {
     drugListContainer.innerHTML = "";
-
     if (drugs.length === 0) {
       drugListContainer.innerHTML = `<p>No drugs found.</p>`;
       return;
@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
         event.target.disabled = true;
         event.target.textContent = "Saved";
 
-        fetch("http://localhost:3000/savedDrugs", {
+        fetch(`${baseURL}/savedDrugs`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(drugToSave)
@@ -185,11 +185,10 @@ document.addEventListener("DOMContentLoaded", () => {
   savedList.addEventListener("click", function (event) {
     if (event.target.classList.contains("remove-btn")) {
       const drugId = event.target.dataset.id;
-
       savedDrugs = savedDrugs.filter(drug => drug.id != drugId);
       renderSavedDrugs();
 
-      fetch(`http://localhost:3000/savedDrugs/${drugId}`, {
+      fetch(`${baseURL}/savedDrugs/${drugId}`, {
         method: "DELETE"
       }).then(() => displayDrugs(allDrugs));
     }
@@ -200,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function loadNotes() {
-    fetch("http://localhost:3000/notes")
+    fetch(`${baseURL}/notes`)
       .then(res => res.json())
       .then(notes => renderNotes(notes));
   }
@@ -223,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const id = e.target.dataset.id;
 
     if (e.target.classList.contains("delete-note")) {
-      fetch(`http://localhost:3000/notes/${id}`, {
+      fetch(`${baseURL}/notes/${id}`, {
         method: "DELETE"
       }).then(() => loadNotes());
     }
@@ -247,7 +246,7 @@ document.addEventListener("DOMContentLoaded", () => {
           return;
         }
 
-        fetch(`http://localhost:3000/notes/${id}`, {
+        fetch(`${baseURL}/notes/${id}`, {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ content: newContent })
@@ -265,7 +264,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    fetch("http://localhost:3000/notes")
+    fetch(`${baseURL}/notes`)
       .then(res => res.json())
       .then(notes => {
         if (notes.length >= 4) {
@@ -273,9 +272,9 @@ document.addEventListener("DOMContentLoaded", () => {
           return;
         }
 
-        const newNote = {content};
+        const newNote = { content };
 
-        fetch("http://localhost:3000/notes", {
+        fetch(`${baseURL}/notes`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(newNote)
