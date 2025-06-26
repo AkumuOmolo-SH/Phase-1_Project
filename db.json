@@ -142,7 +142,7 @@
         "insomnia",
         "nervousness"
       ],
-      "image": "https://www.drugs.com/images/pills/btl/sudafed.jpg"
+      "image": "https://durotuss.com.au/wp-content/uploads/2021/12/9314057005910-1-DURO-TUSS-PE-Chesty-Cough-Liquid-Nasal-Decongestant-200mL-1200x1200-1.png"
     },
     {
       "id": "18",
@@ -189,16 +189,36 @@
         "dry mouth"
       ],
       "image": "https://imgcdn.mckesson.com/CumulusWeb/Images/Original_Image/1137738_pkgfront.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Acetaminophen",
+      "purpose": "Pain relief",
+      "sideEffects": [],
+      "image": "https://i5.walmartimages.com/seo/Equate-Extra-Strength-Acetaminophen-Caplets-500-mg-200-Count_5747a55d-b19a-40bc-92d7-0a97a67cb1d7.d0deede9ccf852c008e870f251b30c25.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF"
+    },
+    {
+      "id": "17",
+      "name": "Pseudoephedrine",
+      "purpose": "Common cold",
+      "sideEffects": [
+        "insomnia",
+        "nervousness"
+      ],
+      "image": "https://durotuss.com.au/wp-content/uploads/2021/12/9314057005910-1-DURO-TUSS-PE-Chesty-Cough-Liquid-Nasal-Decongestant-200mL-1200x1200-1.png"
+    },
+    {
+      "id": "14",
+      "name": "Famotidine",
+      "purpose": "Acid reflux",
+      "sideEffects": [],
+      "image": "https://www.camberpharma.com/wp-content/uploads/2022/06/Famotidine_bottle_40mg_1000.jpg"
     }
   ],
   "notes": [
     {
-      "id": "1122",
-      "content": "No Ibuprofen for 1 month"
-    },
-    {
-      "id": "dcd0",
-      "content": "No Naproxen"
+      "id": "a999",
+      "content": "Avoid Aspirin."
     }
   ]
 }

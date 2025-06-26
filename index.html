@@ -9,7 +9,36 @@
 </head>
 <body>
   <h1>MEDSafe</h1>
-  <p id = "top-paragraph"> Get the most out of your travel and hospitality business with tailored solutions and specialized consulting that give measurable results. </p>
+  <nav>
+    <ul class="nav-list">
+      <li><a href="#saved-list" class="tab">Saved Drugs</a></li>
+      <li><a href="#note-form" class="tab">Your Notes</a></li>
+    </ul>
+  </nav>
+
+  <p id = "top-paragraph"> This app helps you explore medications based on purpose and side effects. Easily search, filter, and save drugs to your collection. With clear visuals and safety-focused tags, making informed medical choices is simple. Perfect for patients, caregivers, or anyone managing treatment with confidence and ease. </p>
+
+  
+
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="Search e.g Ibuprofen, e.g Nausea" />
+    <button id="clear-search">&#x2716;</button>
+  </div>
+
+  
+  <div id="filters">
+    <div id="purpose-tags"></div>
+    <div id="effect-tags"></div>
+    <button id="reset-filters">Reset Filters</button>
+  </div>
+
+  
+  <div id="drug-list"></div>
+
+  <h2>Your Saved Drugs</h2>
+  <div id="saved-list">
+    <div id="saved-drug-list"></div>
+  </div>
 
   <h2>Doctor's Notes</h2>
   <form id="note-form">
@@ -17,27 +46,6 @@
     <button type="submit">Add Note</button>
   </form>
   <ul id="notes-list"></ul>
-
-  <div id="search-container">
-    <input type="text" id="search-input" placeholder="Search e.g Ibuprofen, e.g Nausea" />
-    <button id="clear-search">&#x2716;</button>
-  </div>
-
-  <!-- Filter Tags -->
-  <div id="filters">
-    <div id="purpose-tags"></div>
-    <div id="effect-tags"></div>
-    <button id="reset-filters">Reset Filters</button>
-  </div>
-
-  <!-- Drug List -->
-  <div id="drug-list"></div>
-
-  <!-- Saved Drugs -->
-  <h2>Your Saved Drugs</h2>
-  <div id="saved-list">
-    <div id="saved-drug-list"></div>
-  </div>
 
   <script src="script.js" defer></script>
 </body>
