@@ -58,10 +58,19 @@ Phase-01-Project
 
 
 
-**## Author**
+---
 
-Akumu Omolo
+**###  Author**
 
-**## License**
+**Akumu Omolo**  
+GitHub: [@AkumuOmolo-SH](https://github.com/AkumuOmolo-SH)
+
+---
+
+**### License**
+
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
+This project is licensed under the [MIT License](LICENSE).
+
 
 
