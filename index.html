@@ -9,21 +9,25 @@
 </head>
 <body>
   <h1>MEDSafe&reg;</h1>
-  <nav>
-    <ul class="nav-list">
-      <li><a href="#saved-list" class="tab">Saved Drugs</a></li>
-      <li><a href="#note-form" class="tab">Your Notes</a></li>
-    </ul>
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <span class="med-safe">MEDSafe&reg;</span>
+    </div>
+
+    <div class="nav-right">
+      <a href="#saved-list" class="tab">Saved Drugs</a>
+      <a href="#note-form" class="tab">Your Notes</a>
+    </div>
+    <!-- <ul class="nav-list">
+       <li class="med-safe">MEDSafe&reg;</a></li> -->
+      <!-- <li><a href="#saved-list" class="tab">Saved Drugs</a></li>
+      <li><a href="#note-form" class="tab">Your Notes</a></li> -->
+     
+    <!-- </ul> -->
   </nav>
 
-  
-
-
-
-
-  <p id = "top-paragraph"> This app helps you explore medications based on purpose and side effects. Easily search, filter, and save drugs to your collection. With clear visuals and safety-focused tags, making informed medical choices is simple. Perfect for patients, caregivers, or anyone managing treatment with confidence and ease. </p>
-
-  
+  <p id = "top-paragraph"> This website helps you explore medications based on purpose and side effects. Easily search, filter, and save drugs to your collection. With clear visuals and safety-focused tags, making informed medical choices is simple. Perfect for patients, caregivers, or anyone managing treatment with confidence and ease. </p>
 
   <div id="search-container">
     <input type="text" id="search-input" placeholder="Search e.g Ibuprofen, e.g Nausea" />
@@ -52,19 +56,10 @@
   </form>
   <ul id="notes-list"></ul>
 
-  <!-- Auth Modal -->
-<div id="auth-modal" class="modal" style="display: none;">
-  <div class="modal-content">
-    <span class="close-btn" id="close-modal">&times;</span>
-    
-    <div class="auth-tabs">
-      <button id="show-login">Login</button>
-      <button id="show-register">Register</button>
-    </div>
 
     <!-- Login Form -->
     <div id="login-section">
-      <h3>Login</h3>
+      
       <input type="text" id="username-input" placeholder="Username" />
       <input type="password" id="password-input" placeholder="Password" />
       <button id="login-btn">Login</button>
@@ -73,12 +68,12 @@
     <!-- Register Form -->
     <div id="register-section" style="display: none;">
       <h3>Register</h3>
-      <input type="text" id="register-username" placeholder="New Username" />
-      <input type="password" id="register-password" placeholder="New Password" />
+      
+    
       <button id="register-btn">Register</button>
     </div>
-  </div>
-</div>
+  
+
 
   <script src="script.js" defer></script>
 </body>
