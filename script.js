@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // 🔄 Automatically switch between local and Render server
   const baseURL = window.location.hostname.includes("localhost")
     ? "http://localhost:3000"
     : "https://medsafe-lifx.onrender.com";
