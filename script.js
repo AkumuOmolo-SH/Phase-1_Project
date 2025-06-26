@@ -300,40 +300,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  const authModal = document.getElementById("auth-modal");
-const openAuthBtn = document.getElementById("open-auth-modal");
-const closeModalBtn = document.getElementById("close-modal");
-
-const loginSection = document.getElementById("login-section");
-const registerSection = document.getElementById("register-section");
-const showLoginBtn = document.getElementById("show-login");
-const showRegisterBtn = document.getElementById("show-register");
-
-openAuthBtn.addEventListener("click", () => {
-  authModal.style.display = "flex";
-});
-
-closeModalBtn.addEventListener("click", () => {
-  authModal.style.display = "none";
-});
-
-window.addEventListener("click", (e) => {
-  if (e.target === authModal) {
-    authModal.style.display = "none";
-  }
-});
-
-showLoginBtn.addEventListener("click", () => {
-  loginSection.style.display = "block";
-  registerSection.style.display = "none";
-});
-
-showRegisterBtn.addEventListener("click", () => {
-  loginSection.style.display = "none";
-  registerSection.style.display = "block";
-});
-
-
   noteForm.addEventListener("submit", function (e) {
     e.preventDefault();
     const content = noteContent.value.trim();
@@ -347,11 +313,11 @@ showRegisterBtn.addEventListener("click", () => {
       .then(res => res.json())
       .then(notes => {
         if (notes.length >= 4) {
-          alert("Maximum of 4 notes allowed.");
+          alert("Sorry, maximum of 4 notes allowed.");
           return;
         }
 
-        const newNote = { content };
+        const newNote = {content};
 
         fetch("http://localhost:3000/notes", {
           method: "POST",

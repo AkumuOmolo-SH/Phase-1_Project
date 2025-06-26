@@ -1,11 +1,5 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "username": "Akumu",
-      "password": "1234"
-    }
-  ],
+
   "drugs": [
     {
       "id": "1",
@@ -178,23 +172,6 @@
   ],
   "savedDrugs": [
     {
-      "id": "11",
-      "name": "Diphenhydramine",
-      "purpose": "Sleep aid",
-      "sideEffects": [
-        "drowsiness",
-        "dry mouth"
-      ],
-      "image": "https://imgcdn.mckesson.com/CumulusWeb/Images/Original_Image/1137738_pkgfront.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Acetaminophen",
-      "purpose": "Pain relief",
-      "sideEffects": [],
-      "image": "https://i5.walmartimages.com/seo/Equate-Extra-Strength-Acetaminophen-Caplets-500-mg-200-Count_5747a55d-b19a-40bc-92d7-0a97a67cb1d7.d0deede9ccf852c008e870f251b30c25.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF"
-    },
-    {
       "id": "17",
       "name": "Pseudoephedrine",
       "purpose": "Common cold",
@@ -237,12 +214,14 @@
       "purpose": "Pain relief",
       "sideEffects": [],
       "image": "https://i5.walmartimages.com/seo/HealthA2Z-Naproxen-Sodium-220mg-NSAID-300-Caplets-Fast-Pain-Relief-Fever-Reducer_f813612d-4360-45c8-a6b3-281e3e3cdaa0.e0e6ae94263ee89286269bb8678d1ca8.jpeg"
+    },
+    {
+      "id": "2",
+      "name": "Acetaminophen",
+      "purpose": "Pain relief",
+      "sideEffects": [],
+      "image": "https://i5.walmartimages.com/seo/Equate-Extra-Strength-Acetaminophen-Caplets-500-mg-200-Count_5747a55d-b19a-40bc-92d7-0a97a67cb1d7.d0deede9ccf852c008e870f251b30c25.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF"
     }
   ],
-  "notes": [
-    {
-      "id": "a999",
-      "content": "Avoid Aspirin."
-    }
-  ]
+  "notes": []
 }
