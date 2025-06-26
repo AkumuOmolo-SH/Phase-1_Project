@@ -2,9 +2,9 @@
   "name": "phase-01-project",
   "version": "1.0.0",
   "main": "script.js",
-  "scripts": {
-    "start": "json-server --watch db.json --port $PORT"
-  },
+"scripts": {
+  "start": "json-server --host 0.0.0.0 --watch db.json --port $PORT"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AkumuOmolo-SH/Phase-1_Project.git"
