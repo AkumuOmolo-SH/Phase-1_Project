@@ -212,5 +212,10 @@
       "image": "https://eugiaus.com/wp-content/uploads/Phenylephrine-50mg-5mL-web.jpg"
     }
   ],
-  "notes": []
+  "notes": [
+    {
+      "id": "ec1e",
+      "content": "Avoid Aspirin"
+    }
+  ]
 }

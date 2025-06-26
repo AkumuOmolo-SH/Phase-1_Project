@@ -102,13 +102,24 @@ nav {
 }
 
 #top-paragraph {
- font-size: 25px;
- line-height: 35px;
- margin-left: 950px;
- margin-right: 500px;
- margin-bottom: 80px;
+ font-size: 50px;
+ line-height: 65px;
+ margin-left: 600px;
+ margin-right: 600px;
+ text-align: center;
  color: #555;
  margin-top: 200px;
+ margin-bottom: 60px;
+}
+
+p{
+margin-bottom: 200px;
+text-align: center;
+font-size: 20px;
+margin-left: 400px;
+margin-right: 400px;
+color: #575757;
+font-weight: 200;
 }
 
 
@@ -249,6 +260,7 @@ button:disabled {
 
 #note-form textarea {
   width: 100%;
+  text-align: left;
   padding: 12px;
   font-size: 1rem;
   border-radius: 8px;
@@ -259,6 +271,7 @@ button:disabled {
 
 #notes-list li {
   list-style: none;
+  text-align: left;
   background-color: #fff;
   border-radius: 8px;
   padding: 15px;
@@ -284,7 +297,6 @@ button:disabled {
 #saved-list {
   margin-top: 40px;
 }
-
 
 
 @media (min-width: 768px) {

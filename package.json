@@ -1,0 +1,23 @@
+{
+  "name": "phase-01-project",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+  "start": "json-server --watch db.json --port $PORT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkumuOmolo-SH/Phase-1_Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AkumuOmolo-SH/Phase-1_Project/issues"
+  },
+  "homepage": "https://github.com/AkumuOmolo-SH/Phase-1_Project#readme",
+  "description": "",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
