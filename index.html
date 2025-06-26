@@ -3,32 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MedSafe&reg;</title>
+  <title>MedSmart&reg;</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>MEDSafe&reg;</h1>
 
   <nav class="navbar">
     <div class="nav-left">
-      <span class="med-safe">MEDSafe&reg;</span>
+      <span class="med-safe">MEDSmart&reg;</span>
     </div>
 
     <div class="nav-right">
       <a href="#saved-list" class="tab">Saved Drugs</a>
       <a href="#note-form" class="tab">Your Notes</a>
     </div>
-    <!-- <ul class="nav-list">
-       <li class="med-safe">MEDSafe&reg;</a></li> -->
-      <!-- <li><a href="#saved-list" class="tab">Saved Drugs</a></li>
-      <li><a href="#note-form" class="tab">Your Notes</a></li> -->
-     
-    <!-- </ul> -->
+   
   </nav>
 
   <p id = "top-paragraph"> This website helps you explore medications based on purpose and side effects. Easily search, filter, and save drugs to your collection. With clear visuals and safety-focused tags, making informed medical choices is simple. Perfect for patients, caregivers, or anyone managing treatment with confidence and ease. </p>
-
+  <p></p>
   <div id="search-container">
     <input type="text" id="search-input" placeholder="Search e.g Ibuprofen, e.g Nausea" />
     <button id="clear-search">&#x2716;</button>
@@ -55,25 +49,6 @@
     <button type="submit">Add Note</button>
   </form>
   <ul id="notes-list"></ul>
-
-
-    <!-- Login Form -->
-    <div id="login-section">
-      
-      <input type="text" id="username-input" placeholder="Username" />
-      <input type="password" id="password-input" placeholder="Password" />
-      <button id="login-btn">Login</button>
-    </div>
-
-    <!-- Register Form -->
-    <div id="register-section" style="display: none;">
-      <h3>Register</h3>
-      
-    
-      <button id="register-btn">Register</button>
-    </div>
-  
-
 
   <script src="script.js" defer></script>
 </body>

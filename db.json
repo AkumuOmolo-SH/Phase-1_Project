@@ -1,5 +1,4 @@
 {
-
   "drugs": [
     {
       "id": "1",
@@ -172,31 +171,11 @@
   ],
   "savedDrugs": [
     {
-      "id": "17",
-      "name": "Pseudoephedrine",
-      "purpose": "Common cold",
-      "sideEffects": [
-        "insomnia",
-        "nervousness"
-      ],
-      "image": "https://durotuss.com.au/wp-content/uploads/2021/12/9314057005910-1-DURO-TUSS-PE-Chesty-Cough-Liquid-Nasal-Decongestant-200mL-1200x1200-1.png"
-    },
-    {
       "id": "14",
       "name": "Famotidine",
       "purpose": "Acid reflux",
       "sideEffects": [],
       "image": "https://www.camberpharma.com/wp-content/uploads/2022/06/Famotidine_bottle_40mg_1000.jpg"
-    },
-    {
-      "id": "3",
-      "name": "Aspirin",
-      "purpose": "Pain relief",
-      "sideEffects": [
-        "stomach upset",
-        "bleeding"
-      ],
-      "image": "https://images-na.ssl-images-amazon.com/images/I/71sFt1-svKL.jpg"
     },
     {
       "id": "1",
@@ -221,6 +200,16 @@
       "purpose": "Pain relief",
       "sideEffects": [],
       "image": "https://i5.walmartimages.com/seo/Equate-Extra-Strength-Acetaminophen-Caplets-500-mg-200-Count_5747a55d-b19a-40bc-92d7-0a97a67cb1d7.d0deede9ccf852c008e870f251b30c25.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF"
+    },
+    {
+      "id": "18",
+      "name": "Phenylephrine",
+      "purpose": "Common cold",
+      "sideEffects": [
+        "headache",
+        "dizziness"
+      ],
+      "image": "https://eugiaus.com/wp-content/uploads/Phenylephrine-50mg-5mL-web.jpg"
     }
   ],
   "notes": []

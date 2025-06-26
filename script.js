@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   let allDrugs = [];
   let savedDrugs = [];
-  let currentUser = null;
+  
 
   const drugListContainer = document.getElementById("drug-list");
   const savedList = document.getElementById("saved-drug-list");
@@ -13,51 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const resetButton = document.getElementById("reset-filters");
   const purposeTagContainer = document.getElementById("purpose-tags");
   const effectTagContainer = document.getElementById("effect-tags");
-  const userStatus = document.getElementById("user-status");
-  const loginInput = document.getElementById("auth-username");
-  const loginBtn = document.getElementById("login-btn");
-  const registerBtn = document.getElementById("register-btn");
-
-  loginBtn.addEventListener("click", () => {
-    const username = loginInput.value.trim();
-    if (!username) return alert("Enter a username.");
-
-    fetch(`http://localhost:3000/users?username=${username}`)
-      .then(res => res.json())
-      .then(users => {
-        if (users.length > 0) {
-          currentUser = users[0];
-          userStatus.textContent = `Logged in as ${currentUser.username}`;
-        } else {
-          alert("User not found.");
-        }
-      });
-  });
-
-  registerBtn.addEventListener("click", () => {
-    const username = loginInput.value.trim();
-    if (!username) return alert("Enter a username.");
-
-    fetch(`http://localhost:3000/users?username=${username}`)
-      .then(res => res.json())
-      .then(users => {
-        if (users.length === 0) {
-          fetch(`http://localhost:3000/users`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ username })
-          })
-            .then(res => res.json())
-            .then(user => {
-              currentUser = user;
-              userStatus.textContent = `Logged in as ${user.username}`;
-            });
-        } else {
-          alert("Username already exists.");
-        }
-      });
-  });
-
+  
   fetch("http://localhost:3000/savedDrugs")
     .then(res => res.json())
     .then(data => {
